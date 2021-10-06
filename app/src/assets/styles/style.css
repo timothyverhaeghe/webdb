@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.section-wipe-enter {
+  opacity: 0;
+  transform: translateX(40px);
+}
+
+.section-wipe-leave-to {
+  opacity: 0;
+  transform: translateX(-40px);
+}
+
+.section-wipe-enter-to,
+.section-wipe-leave {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.section-wipe-enter-active,
+.section-wipe-leave-active {
+  transition: all .5s cubic-bezier(.28, 0, .23, .99);
+}
+
+.go-up-enter {
+  opacity: 0;
+  transform: scale(0.6);
+}
+
+.go-up-leave-to {
+  opacity: 0;
+  transform: scale(0.6);
+}
+
+.go-up-enter-to,
+.go-up-leave {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.go-up-enter-active,
+.go-up-leave-active {
+  transition: all .3s cubic-bezier(.28, 0, .23, .99);
+}
+
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-leave-to {
+  opacity: 0;
+}
+
+.fade-enter-to,
+.fade-leave {
+  opacity: 1;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity .5s ease;
+}
+
+
+.slide-right-enter {
+  transform: translateX(10px);
+  opacity: 0;
+}
+
+.slide-right-leave-to {
+  transform: translateX(10px);
+  opacity: 0;
+}
+
+.slide-right-enter-to,
+.slide-right-leave {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.slide-right-enter-active,
+.slide-right-leave-active {
+  transition: transform .3s cubic-bezier(.28, 0, .23, .99), opacity .3s cubic-bezier(.28, 0, .23, .99);
+}

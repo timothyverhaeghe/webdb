@@ -1,0 +1,10 @@
+# Logs
+*.log
+node_modules/
+package-lock.json
+env.js
+builds/*
+!builder/boilerplates/webssr/template/env.js
+
+.vscode
+.idea
